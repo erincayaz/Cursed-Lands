@@ -1,0 +1,66 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MonsterSpecificSpawner : MonoBehaviour
+{
+    List<GameObject> enemies = new List<GameObject>();
+    [SerializeField] List<int> countForWaves = new List<int>();
+    [SerializeField] GameObject spawnedObject;
+
+    private void OnEnable()
+    {
+        EventManager.OnSpawn += EnemySpawnSubscriber;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnSpawn -= EnemySpawnSubscriber;
+    }
+
+    IEnumerator EnemySpawnSubscriber(int i)
+    {
+        int count = countForWaves[i];
+
+        int j = 0;
+        while(j < count)
+        {
+            GameObject temp = availableEnemyExist();
+            if(temp != null)
+            {
+                Vector3 randomPoint = EnemySpawner.generateRandomPoint(Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0)));
+                
+                temp.SetActive(true);
+                temp.GetComponent<enemyMovement>().ded = false;
+                temp.transform.position = randomPoint;
+            }
+            else
+            {
+                Vector3 randomPoint = EnemySpawner.generateRandomPoint(Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0)));
+
+                GameObject gameObject = Instantiate(spawnedObject, randomPoint, Quaternion.identity);
+                enemies.Add(gameObject);
+            }
+
+            j++;
+        }
+
+        yield return null;
+    }
+
+    GameObject availableEnemyExist()
+    {
+        if (enemies.Count > 0)
+        {
+            foreach (GameObject enemy in enemies)
+            {
+                if (enemy.transform.position.x == 500f && enemy.transform.position.y == 500f)
+                {
+                    return enemy;
+                }
+            }
+        }
+
+        return null;
+    }
+}
