@@ -1,15 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class characterMovement : MonoBehaviour
 {
     [Header("Movement")]
     [SerializeField] float speed;
+    [SerializeField] float xpCollectRadius;
+    [SerializeField] float xpSpeed;
     [SerializeField] GameObject healthBar;
+    [SerializeField] Image xpBar;
+    [SerializeField] LayerMask xpMask;
 
     public float baseHealth;
+    public float levelUpXP;
     float health;
+    public float xp;
     private float lastDamageTaken;
 
     Rigidbody2D rb;
@@ -29,12 +36,50 @@ public class characterMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         health = baseHealth;
         lastDamageTaken = Time.time;
+
+        xpBar.fillAmount = 0f;
     }
 
     // Update is called once per frame
     void Update()
     {
         Move();
+
+        Collider2D[] coll = Physics2D.OverlapCircleAll(transform.position, xpCollectRadius, xpMask);
+        if (coll.Length > 0)
+        {
+            foreach(Collider2D col in coll)
+            {
+                Vector3 dir = transform.position - col.transform.position;
+                col.transform.position += dir.normalized * Time.deltaTime * xpSpeed;
+
+                if(Vector3.Distance(transform.position, col.transform.position) < 0.5f)
+                {
+                    Color temp = col.GetComponent<SpriteRenderer>().color;
+                    if (temp.a == 1f)
+                    {
+                        xp += 1f;
+                    }
+                    else if (temp.a == 254f / 255f)
+                    {
+                        xp += 10f;
+                    }
+                    else
+                    {
+                        xp += 100f;
+                    }
+
+                    if (xp > levelUpXP)
+                    {
+                        xp = xp - levelUpXP;
+                        levelUpXP += 50f;
+                    }
+
+                    col.transform.position = new Vector3(5f, 5f, 0f);
+                    xpBar.fillAmount = xp / levelUpXP;
+                }
+            }
+        }
         //transform.position += new Vector3(h * speed * Time.deltaTime, v * speed * Time.deltaTime);
     }
 
@@ -58,4 +103,5 @@ public class characterMovement : MonoBehaviour
             lastDamageTaken = Time.time;
         }
     }
+
 }
