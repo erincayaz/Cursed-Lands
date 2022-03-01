@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95d025fd90d21ce4ab85146c70ba76c7, type: 3}
-  m_Name: Bouncing Attack
+  m_Name: ExplosiveSummon
   m_EditorClassIdentifier: 
-  radius: 0
-  damage: 10
-  amount: 2
-  cooldown: 2.5
-  speed: 3
-  duration: 5
-  level: 0
-  baseRadius: 0
-  baseDamage: 10
-  baseAmount: 2
-  baseCooldown: 2.5
-  baseSpeed: 3
-  baseDuration: 5
-  baseLevel: 0
+  radius: 0.6
+  damage: 20
+  amount: 1
+  cooldown: 2
+  speed: 2
+  duration: 4
+  level: 1
+  baseRadius: 0.6
+  baseDamage: 20
+  baseAmount: 1
+  baseCooldown: 2
+  baseSpeed: 2
+  baseDuration: 4
+  baseLevel: 1
   sprite: {fileID: 0}
   anim: {fileID: 0}

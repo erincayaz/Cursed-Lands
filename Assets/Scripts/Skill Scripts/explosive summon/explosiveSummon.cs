@@ -60,26 +60,21 @@ public class explosiveSummon : MonoBehaviour
                 rb.velocity = Vector2.zero;
                 Invoke("explode", .5f);
             }
-        } 
+        }
     }
     void explode()
     {
         //summon damages enemies here
-        Debug.Log("damaging enemy");
+        RaycastHit2D[] enemies = Physics2D.CircleCastAll(transform.position, explodingSummon.radius, Vector2.zero, Mathf.Infinity, enemyMask);
+        //damage enemy here
+        foreach (var enemy in enemies)
+        {
+            enemy.transform.GetComponent<enemyMovement>().enemyHit(explodingSummon.damage, 0f);
+        }
         // damaging enemies end here
 
         pool();
     }
-    //IEnumerator explode()
-    //{
-    //    yield return new WaitForSeconds(explodingSummon.duration);
-
-    //    //summon damages enemies here
-    //    Debug.Log("damaging enemy");
-    //    // damaging enemies end here
-
-    //    pool();
-    //}
 
     public void pool()
     {
@@ -95,6 +90,5 @@ public class explosiveSummon : MonoBehaviour
         transform.position = new Vector3(randX + player.transform.position.x, randY + player.transform.position.y, 0);
         locateEnemy();
         spawnTime = Time.time;
-        //StartCoroutine(explode());
     }
 }
