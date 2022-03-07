@@ -8,6 +8,7 @@ public class enemyMovement : MonoBehaviour
     //public static event PlayerHitAction OnHit;
 
     public enemyScriptableObject scriptableObject;
+    [SerializeField] GameObject xp;
 
     // object variables
     public float health;
@@ -71,6 +72,10 @@ public class enemyMovement : MonoBehaviour
         if(health <= 0f)
         {
             ded = true;
+
+            if( (scriptableObject.enemyTier * 0.75f) * Random.Range(0, 100) >= 60)
+                EventManager.BroadcastOnDeath(transform.position);
+
             transform.position = new Vector3(500f, 500f);
             rb.velocity = Vector2.zero;
             gameObject.SetActive(false);
@@ -84,6 +89,4 @@ public class enemyMovement : MonoBehaviour
     {
         hit = false;
     }
-
-
 }

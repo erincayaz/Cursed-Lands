@@ -13,8 +13,16 @@ public class EventManager
     public delegate void BibleAnimation(bool animControl);
     public static event BibleAnimation OnChange;
 
-    public delegate IEnumerator EnemySpawnAction(int i);
+    public delegate void EnemySpawnAction(int i);
     public static event EnemySpawnAction OnSpawn;
+
+    public delegate void EnemyDeathAction(Vector3 position);
+    public static event EnemyDeathAction OnDeath;
+
+    public static void BroadcastOnDeath(Vector3 position)
+    {
+        OnDeath?.Invoke(position);
+    }
 
     public static void BrodcastOnRotate(float h)
     {
@@ -31,12 +39,9 @@ public class EventManager
         OnChange?.Invoke(animControl);
     }
 
-    public static void BrodcastOnSpawn(MonoBehaviour handle, int i)
+    public static void BrodcastOnSpawn(int i)
     {
-        if(OnSpawn != null)
-        {
-            handle.StartCoroutine(OnSpawn(i));
-        }
+        OnSpawn?.Invoke(i);
     }
 
 }
