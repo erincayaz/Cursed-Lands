@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptableObject: {fileID: 11400000, guid: 144a803cc64ea8745b4e8aca9c5e41a9, type: 2}
-  xp: {fileID: 0}
+  xp: {fileID: 8811950632858234666, guid: dcba7fd8c02b4da42947a3595e2fbd6d, type: 3}
   health: 20
   hitCooldown: 0.33
   ded: 0

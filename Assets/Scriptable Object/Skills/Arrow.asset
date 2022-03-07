@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: Arrow
   m_EditorClassIdentifier: 
   radius: 0
-  damage: 0
+  damage: 5
   amount: 1
-  cooldown: 5
+  cooldown: 0.5
   speed: 9
   duration: 0
   level: 1
   baseRadius: 0
-  baseDamage: 0
+  baseDamage: 5
   baseAmount: 1
-  baseCooldown: 5
+  baseCooldown: 0.5
   baseSpeed: 9
   baseDuration: 0
   baseLevel: 1

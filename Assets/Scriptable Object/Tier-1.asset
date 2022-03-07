@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3499221a593ff2244a2aeb65d64872df, type: 3}
-  m_Name: 20
+  m_Name: Tier-1
   m_EditorClassIdentifier: 
   health: 10
   speed: 1
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 756d53e687019114ab805f7dfa6a79f8, type: 3}
   attack: 5
-  enemyTier: 0
+  enemyTier: 2
