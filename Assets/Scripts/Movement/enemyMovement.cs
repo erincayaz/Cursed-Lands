@@ -73,7 +73,7 @@ public class enemyMovement : MonoBehaviour
         {
             ded = true;
 
-            Instantiate(xp, transform.position, Quaternion.identity);
+            EventManager.BroadcastOnDeath(transform.position);
 
             transform.position = new Vector3(500f, 500f);
             rb.velocity = Vector2.zero;

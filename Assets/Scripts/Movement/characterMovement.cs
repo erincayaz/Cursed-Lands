@@ -20,6 +20,7 @@ public class characterMovement : MonoBehaviour
     private float lastDamageTaken;
 
     Rigidbody2D rb;
+    Animator anim;
 
     private void OnEnable()
     {
@@ -34,6 +35,8 @@ public class characterMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = transform.GetChild(0).GetComponent<Animator>();
+
         health = baseHealth;
         lastDamageTaken = Time.time;
 
@@ -44,16 +47,36 @@ public class characterMovement : MonoBehaviour
     void Update()
     {
         Move();
+        collectXP();
+        
+        //transform.position += new Vector3(h * speed * Time.deltaTime, v * speed * Time.deltaTime);
+    }
 
+    void Move()
+    {
+        float h = Input.GetAxis("Horizontal"), v = Input.GetAxis("Vertical");
+
+        EventManager.BrodcastOnRotate(h);
+
+        rb.velocity = new Vector2(h, v) * speed;
+
+        if (h == 0 && v == 0)
+            anim.SetBool("walking", false);
+        else
+            anim.SetBool("walking", true);
+    }
+
+    void collectXP()
+    {
         Collider2D[] coll = Physics2D.OverlapCircleAll(transform.position, xpCollectRadius, xpMask);
         if (coll.Length > 0)
         {
-            foreach(Collider2D col in coll)
+            foreach (Collider2D col in coll)
             {
                 Vector3 dir = transform.position - col.transform.position;
                 col.transform.position += dir.normalized * Time.deltaTime * xpSpeed;
 
-                if(Vector3.Distance(transform.position, col.transform.position) < 0.5f)
+                if (Vector3.Distance(transform.position, col.transform.position) < 0.5f)
                 {
                     Color temp = col.GetComponent<SpriteRenderer>().color;
                     if (temp.a == 1f)
@@ -75,21 +98,11 @@ public class characterMovement : MonoBehaviour
                         levelUpXP += 50f;
                     }
 
-                    col.transform.position = new Vector3(5f, 5f, 0f);
+                    col.transform.position = new Vector3(1015f, 1015f, 0f);
                     xpBar.fillAmount = xp / levelUpXP;
                 }
             }
         }
-        //transform.position += new Vector3(h * speed * Time.deltaTime, v * speed * Time.deltaTime);
-    }
-
-    void Move()
-    {
-        float h = Input.GetAxis("Horizontal"), v = Input.GetAxis("Vertical");
-
-        EventManager.BrodcastOnRotate(h);
-
-        rb.velocity = new Vector2(h, v) * speed;
     }
 
     void PlayerHitSubscriber(float damage)

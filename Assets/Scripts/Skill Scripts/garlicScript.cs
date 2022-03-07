@@ -6,11 +6,11 @@ public class garlicScript : MonoBehaviour
 {
     public skillScriptableObject garlicStats;
     float lastAttack;
+    [SerializeField] float rotationSpeed;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        lastAttack = Time.time;
+        transform.eulerAngles = new Vector3(0f, 0f, (transform.eulerAngles.z % 360) + Time.deltaTime * rotationSpeed);
     }
 
 }
