@@ -50,6 +50,8 @@ public class MonsterSpecificSpawner : MonoBehaviour
             }
 
             j++;
+
+            yield return new WaitForSeconds(0.1f);
         }
 
         yield return null;
