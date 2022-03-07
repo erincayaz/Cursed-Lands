@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95d025fd90d21ce4ab85146c70ba76c7, type: 3}
-  m_Name: Explosive Summon
+  m_Name: HolyBomb
   m_EditorClassIdentifier: 
-  radius: 0.6
-  damage: 20
-  amount: 1
-  cooldown: 2
-  speed: 2
+  radius: 0
+  damage: 0
+  amount: 0
+  cooldown: 2.5
+  speed: 0
   duration: 4
-  level: 1
-  baseRadius: 0.6
-  baseDamage: 20
-  baseAmount: 1
-  baseCooldown: 2
-  baseSpeed: 2
+  level: 0
+  baseRadius: 0
+  baseDamage: 0
+  baseAmount: 0
+  baseCooldown: 2.5
+  baseSpeed: 0
   baseDuration: 4
-  baseLevel: 1
+  baseLevel: 0
   sprite: {fileID: 0}
   anim: {fileID: 0}

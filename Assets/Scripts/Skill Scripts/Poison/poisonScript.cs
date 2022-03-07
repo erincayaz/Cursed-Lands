@@ -30,8 +30,7 @@ public class poisonScript : MonoBehaviour
         //damage enemy here
         foreach(var enemy in enemies)
         {
-            Debug.Log("collided with " + enemy);
-            //enemy.transform.gameObject.GetComponent<enemycombat>().getHurt(poison.damage / hitDuration * Time.deltaTime);
+            enemy.transform.GetComponent<enemyMovement>().enemyHit(poison.damage / hitDuration * Time.deltaTime, 0f);
         }
     }
     IEnumerator despawnPoison()
