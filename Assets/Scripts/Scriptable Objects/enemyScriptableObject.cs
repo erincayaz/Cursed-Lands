@@ -9,4 +9,5 @@ public class enemyScriptableObject : ScriptableObject
     public float speed = 1f;
     public Sprite sprite;
     public float attack = 5f;
+    public int enemyTier;
 }

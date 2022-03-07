@@ -10,16 +10,23 @@ public class MonsterSpecificSpawner : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager.OnSpawn += EnemySpawnSubscriber;
+        EventManager.OnSpawn += CoroutineStarter;
     }
 
     private void OnDisable()
     {
-        EventManager.OnSpawn -= EnemySpawnSubscriber;
+        EventManager.OnSpawn -= CoroutineStarter;
+    }
+
+    void CoroutineStarter(int i)
+    {
+        StartCoroutine(EnemySpawnSubscriber(i));
     }
 
     IEnumerator EnemySpawnSubscriber(int i)
     {
+        print("spawn");
+
         int count = countForWaves[i];
 
         int j = 0;
