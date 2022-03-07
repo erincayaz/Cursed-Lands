@@ -62,7 +62,8 @@ public class bombSpawner : MonoBehaviour
         }
         else
         {
-            enemyPos = player.transform;
+            enemyPos = new GameObject().transform;
+            enemyPos.position = new Vector3(player.transform.position.x + Random.Range(-8, 8), player.transform.position.y + Random.Range(-8, 8));
         }
 
         gameObject.GetComponent<bombScript>().Throw(player.transform, enemyPos);
