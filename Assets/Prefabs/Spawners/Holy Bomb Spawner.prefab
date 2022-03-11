@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3759621515551036598
+--- !u!1 &307714525084257313
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3759621515551036599}
-  - component: {fileID: 3759621515551036600}
+  - component: {fileID: 307714525084257312}
+  - component: {fileID: 307714525084257319}
   m_Layer: 0
-  m_Name: Poison Spawner
+  m_Name: Holy Bomb Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &3759621515551036599
+  m_IsActive: 1
+--- !u!4 &307714525084257312
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3759621515551036598}
+  m_GameObject: {fileID: 307714525084257313}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,18 +31,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3759621515551036600
+--- !u!114 &307714525084257319
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3759621515551036598}
+  m_GameObject: {fileID: 307714525084257313}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e680ba4458bbe16458597993672f16ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 223a139987f5ad742b366cc4238bfca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poison: {fileID: 11400000, guid: 9b1a8d2dd989715498949dd77d6be65f, type: 2}
-  poisonObject: {fileID: 0}
-  spawnTime: 0.25
+  holyBomb: {fileID: 11400000, guid: 30f54af59ee80c04d828bdd532c23e1f, type: 2}
+  holyBombObj: {fileID: 0}
+  angle: 85
+  bombList: []

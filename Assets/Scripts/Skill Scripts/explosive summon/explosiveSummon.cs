@@ -5,7 +5,6 @@ using UnityEngine;
 public class explosiveSummon : MonoBehaviour
 {
     public skillScriptableObject explodingSummon;
-    public Transform player;
     public LayerMask enemyMask;
     Rigidbody2D rb;
     GameObject targetEnemy;
@@ -87,7 +86,7 @@ public class explosiveSummon : MonoBehaviour
     {
         exploded = false;
         float randX = Random.Range(.1f, .5f); float randY = Random.Range(.1f, .5f);
-        transform.position = new Vector3(randX + player.transform.position.x, randY + player.transform.position.y, 0);
+        transform.position = new Vector3(randX + Camera.main.transform.position.x, randY + Camera.main.transform.position.y, 0);
         locateEnemy();
         spawnTime = Time.time;
     }

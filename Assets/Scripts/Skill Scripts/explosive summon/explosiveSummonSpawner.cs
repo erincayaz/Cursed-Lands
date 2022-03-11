@@ -31,7 +31,7 @@ public class explosiveSummonSpawner : MonoBehaviour
             else
             {
                 float randX = Random.Range(.5f, 1.5f); float randY = Random.Range(.5f, 1.5f);
-                Instantiate(summon, new Vector3(player.position.x + randX, player.position.y + randY, 0f), Quaternion.identity);
+                Instantiate(summon, new Vector3(Camera.main.transform.position.x + randX, Camera.main.transform.position.y + randY, 0f), Quaternion.identity);
             }
 
             lastSummonTime = Time.time;

@@ -75,7 +75,7 @@ public class explosingSummon : MonoBehaviour
     }
     public void unpool()
     {
-        transform.position = player.transform.position + new Vector3(player.localScale.x * .2f, 0, 0);
+        transform.position = Camera.main.transform.position + new Vector3(0.5f, 0, 0);
         targetEnemy = locateEnemy();
         StartCoroutine(explode());
     }
