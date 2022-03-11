@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class skillUpgrades : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class skillUpgrades : MonoBehaviour
 
     public List<GameObject> availableSkills;
 
-    private void Start()
+    private void OnEnable()
     {
         availableSkills.Clear();
         foreach(var skill in skillScriptableObjects)
@@ -24,6 +25,28 @@ public class skillUpgrades : MonoBehaviour
             {
                 addObject(skillUpgradeList, skill.name);
             }
+        }
+
+        List<int> randomNumbers = new List<int>();
+        int randomInt;
+        for (int i = 0; i < 3; i++)
+        {
+            do
+            {
+                randomInt = Random.Range(0, availableSkills.Count);
+            } while (randomNumbers.IndexOf(randomInt) != -1);
+
+            randomNumbers.Add(randomInt);
+            RectTransform rectTransform = availableSkills[randomInt].GetComponent<RectTransform>();
+            rectTransform.anchoredPosition = new Vector3(0f, (1 - i) * 275f, 0f);
+        }
+    }
+
+    private void OnDisable()
+    {
+        foreach (var skillObj in availableSkills)
+        {
+            if (skillObj.GetComponent<RectTransform>().anchoredPosition != new Vector2(1000f, 1000f)) skillObj.transform.position = new Vector3(1000f, 1000f, 0f);
         }
     }
 
@@ -38,10 +61,6 @@ public class skillUpgrades : MonoBehaviour
         }
     }
 
-    public void theFunction()
-    {
-        print("aaaa");
-    }
     public void increaseRadius(string s)
     {
         foreach (var skill in skillScriptableObjects)
