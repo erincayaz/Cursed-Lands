@@ -96,6 +96,7 @@ public class characterMovement : MonoBehaviour
                     {
                         xp = xp - levelUpXP;
                         levelUpXP += 50f;
+                        EventManager.BrodcastOnLevelUp();
                     }
 
                     col.transform.position = new Vector3(1015f, 1015f, 0f);

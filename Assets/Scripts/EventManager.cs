@@ -19,6 +19,9 @@ public class EventManager
     public delegate void EnemyDeathAction(Vector3 position);
     public static event EnemyDeathAction OnDeath;
 
+    public delegate void LevelUpAction();
+    public static event LevelUpAction OnLevelUp;
+
     public static void BroadcastOnDeath(Vector3 position)
     {
         OnDeath?.Invoke(position);
@@ -42,6 +45,11 @@ public class EventManager
     public static void BrodcastOnSpawn(int i)
     {
         OnSpawn?.Invoke(i);
+    }
+
+    public static void BrodcastOnLevelUp()
+    {
+        OnLevelUp?.Invoke();
     }
 
 }

@@ -173,6 +173,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &99502121 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2879615694999873021, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+  m_PrefabInstance: {fileID: 1871877726}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &180727874 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5015503979792728912, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+  m_PrefabInstance: {fileID: 1871877726}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &396708131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5015503980094719724, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+  m_PrefabInstance: {fileID: 1871877726}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &727581788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5015503978890805374, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+  m_PrefabInstance: {fileID: 1871877726}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &774304990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -343,6 +363,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3484ddf04cd8c7541a41cca562122634, type: 3}
+--- !u!1 &917399016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 917399017}
+  - component: {fileID: 917399018}
+  m_Layer: 0
+  m_Name: Game Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &917399017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917399016}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16.564066, y: -2.240172, z: -172.43547}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 99502121}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &917399018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917399016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df7665a72c7ef2b4ca77d925fde6f35a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelUpCanvas: {fileID: 2004438982}
 --- !u!4 &1059424593 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7874640244258554062, guid: 3484ddf04cd8c7541a41cca562122634, type: 3}
@@ -359,10 +423,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455b63240feeb0b4abaaef72ad647e2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1123178648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5015503978464340750, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+  m_PrefabInstance: {fileID: 1871877726}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1375031262 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6935475741335516801, guid: 29bbf1aca07ab2143acbcdc009336ac5, type: 3}
   m_PrefabInstance: {fileID: 1670175351}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1421176034 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5015503978629234833, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+  m_PrefabInstance: {fileID: 1871877726}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1520106717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5015503978714077843, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+  m_PrefabInstance: {fileID: 1871877726}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1598140701 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5015503979677388748, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+  m_PrefabInstance: {fileID: 1871877726}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1670175351
 PrefabInstance:
@@ -371,6 +455,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 94861319}
     m_Modifications:
+    - target: {fileID: 6935475741335516800, guid: 29bbf1aca07ab2143acbcdc009336ac5, type: 3}
+      propertyPath: xpPrefab
+      value: 
+      objectReference: {fileID: 3952073083639693440, guid: 70ee53040ec3fb34fab4a5a9fb0df1c2, type: 3}
     - target: {fileID: 6935475741335516801, guid: 29bbf1aca07ab2143acbcdc009336ac5, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -421,6 +509,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29bbf1aca07ab2143acbcdc009336ac5, type: 3}
+--- !u!1 &1713430614 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5015503978804904717, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+  m_PrefabInstance: {fileID: 1871877726}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1813734533 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5015503980248323148, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+  m_PrefabInstance: {fileID: 1871877726}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1870379791 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5015503979542059942, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+  m_PrefabInstance: {fileID: 1871877726}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1871877726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -487,6 +590,1594 @@ PrefabInstance:
     - target: {fileID: 2879615694999873021, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978337161662, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978337161662, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978337161662, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503978337161662, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978337161662, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978337161662, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978337161662, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978337161662, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978374957213, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978374957213, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978374957213, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503978374957213, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978374957213, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978374957213, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978374957213, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978374957213, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978396706976, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978396706976, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978396706976, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503978396706976, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978396706976, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978396706976, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978396706976, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978396706976, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978405593782, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978405593782, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978405593782, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503978405593782, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978405593782, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978405593782, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978405593782, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978405593782, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978439263762, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978439263762, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978439263762, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503978439263762, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978439263762, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978439263762, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978439263762, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978439263762, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978464340748, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978464340748, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978464340748, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503978464340748, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978464340748, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978464340748, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978464340748, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978464340748, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978492718924, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978492718925, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: skillUnlockList.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978492718925, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: skillUnlockList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1123178648}
+    - target: {fileID: 5015503978492718925, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: skillUnlockList.Array.data[1]
+      value: 
+      objectReference: {fileID: 1870379791}
+    - target: {fileID: 5015503978492718925, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: skillUnlockList.Array.data[2]
+      value: 
+      objectReference: {fileID: 2097661569}
+    - target: {fileID: 5015503978492718925, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: skillUnlockList.Array.data[3]
+      value: 
+      objectReference: {fileID: 1421176034}
+    - target: {fileID: 5015503978492718925, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: skillUnlockList.Array.data[4]
+      value: 
+      objectReference: {fileID: 1813734533}
+    - target: {fileID: 5015503978492718925, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: skillUnlockList.Array.data[5]
+      value: 
+      objectReference: {fileID: 1598140701}
+    - target: {fileID: 5015503978492718925, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: skillUnlockList.Array.data[6]
+      value: 
+      objectReference: {fileID: 1520106717}
+    - target: {fileID: 5015503978492718925, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: skillUnlockList.Array.data[7]
+      value: 
+      objectReference: {fileID: 180727874}
+    - target: {fileID: 5015503978492718925, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: skillUnlockList.Array.data[8]
+      value: 
+      objectReference: {fileID: 1713430614}
+    - target: {fileID: 5015503978492718925, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: skillUnlockList.Array.data[9]
+      value: 
+      objectReference: {fileID: 396708131}
+    - target: {fileID: 5015503978492718925, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: skillUnlockList.Array.data[10]
+      value: 
+      objectReference: {fileID: 727581788}
+    - target: {fileID: 5015503978629234847, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978629234847, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978629234847, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503978629234847, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978629234847, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978629234847, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978629234847, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978629234847, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978657956407, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978657956407, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978657956407, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503978657956407, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978657956407, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978657956407, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978657956407, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978657956407, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978687536529, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978687536529, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978687536529, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503978687536529, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978687536529, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978687536529, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978687536529, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978687536529, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978714077841, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978714077841, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978714077841, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503978714077841, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978714077841, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978714077841, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978714077841, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978714077841, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978793973603, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978793973603, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978793973603, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503978793973603, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978793973603, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978793973603, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978793973603, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978793973603, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978804904715, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978804904715, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978804904715, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503978804904715, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978804904715, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978804904715, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978804904715, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978804904715, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978816042958, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978816042958, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978816042958, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503978816042958, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978816042958, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978816042958, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978816042958, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978816042958, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978856818068, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978856818068, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978856818068, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503978856818068, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978856818068, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978856818068, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978856818068, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978856818068, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978890805372, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978890805372, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978890805372, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503978890805372, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978890805372, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978890805372, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978890805372, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978890805372, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978904957565, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978904957565, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978904957565, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503978904957565, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978904957565, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978904957565, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978904957565, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978904957565, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978992500642, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978992500642, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978992500642, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503978992500642, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978992500642, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978992500642, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978992500642, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503978992500642, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979022892385, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979022892385, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979022892385, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979022892385, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979022892385, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979022892385, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979022892385, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979022892385, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979085948249, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979085948249, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979085948249, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979085948249, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979085948249, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979085948249, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979085948249, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979085948249, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979179935289, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979179935289, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979179935289, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979179935289, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979179935289, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979179935289, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979179935289, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979179935289, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979183173615, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979183173615, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979183173615, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979183173615, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979183173615, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979183173615, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979183173615, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979183173615, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979208187653, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979208187653, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979208187653, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979208187653, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979208187653, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979208187653, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979208187653, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979208187653, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979214517996, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979214517996, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979214517996, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979214517996, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979214517996, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979214517996, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979214517996, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979214517996, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979367565642, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979367565642, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979367565642, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979367565642, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979367565642, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979367565642, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979367565642, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979367565642, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979378779918, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979378779918, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979378779918, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979378779918, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979378779918, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979378779918, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979378779918, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979378779918, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979452227292, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979452227292, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979452227292, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979452227292, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979452227292, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979452227292, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979452227292, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979452227292, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979478421712, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979478421712, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979478421712, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979478421712, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979478421712, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979478421712, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979478421712, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979478421712, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979542059940, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979542059940, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979542059940, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979542059940, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979542059940, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979542059940, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979542059940, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979542059940, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979677388746, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979677388746, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979677388746, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979677388746, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979677388746, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979677388746, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979677388746, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979677388746, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979686243118, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979686243118, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979686243118, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979686243118, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979686243118, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979686243118, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979686243118, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979686243118, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979754328434, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979754328434, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979754328434, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979754328434, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979754328434, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979754328434, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979754328434, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979754328434, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979792728926, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979792728926, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979792728926, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979792728926, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979792728926, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979792728926, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979792728926, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979792728926, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979802745130, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979802745130, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979802745130, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979802745130, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979802745130, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979802745130, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979802745130, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979802745130, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979901111047, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979901111047, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979901111047, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979901111047, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979901111047, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979901111047, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979901111047, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979901111047, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979903884553, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979903884553, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979903884553, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979903884553, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979903884553, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979903884553, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979903884553, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979903884553, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979917920403, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979917920403, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979917920403, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503979917920403, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979917920403, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979917920403, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979917920403, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503979917920403, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980034691460, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980034691460, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980034691460, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503980034691460, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980034691460, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980034691460, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980034691460, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980034691460, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980070934228, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980070934228, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980070934228, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503980070934228, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980070934228, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980070934228, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980070934228, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980070934228, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980094719722, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980094719722, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980094719722, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503980094719722, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980094719722, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980094719722, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980094719722, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980094719722, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980105162394, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980105162394, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980105162394, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503980105162394, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980105162394, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980105162394, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980105162394, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980105162394, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980166329054, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980166329054, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980166329054, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503980166329054, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980166329054, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980166329054, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980166329054, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980166329054, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980208864476, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980208864476, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980208864476, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503980208864476, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980208864476, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980208864476, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980208864476, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980208864476, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980224884991, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980224884991, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980224884991, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503980224884991, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980224884991, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980224884991, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980224884991, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980224884991, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980240383525, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980240383525, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980240383525, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503980240383525, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980240383525, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980240383525, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980240383525, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980240383525, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980248323146, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980248323146, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980248323146, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503980248323146, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980248323146, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980248323146, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980248323146, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980248323146, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980275086760, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980275086760, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980275086760, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503980275086760, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980275086760, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980275086760, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980275086760, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980275086760, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980309613681, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980309613681, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980309613681, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503980309613681, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980309613681, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980309613681, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980309613681, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980309613681, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980318406477, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980318406477, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980318406477, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917399018}
+    - target: {fileID: 5015503980318406477, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980318406477, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUpClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980318406477, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: gameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980318406477, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015503980318406477, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6157048956997073113, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
       propertyPath: m_IsActive
@@ -702,3 +2393,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2004438982 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5015503978492718924, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+  m_PrefabInstance: {fileID: 1871877726}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2097661569 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5015503979022892387, guid: a28d0effb0310ff4f9cdb577093c3ce1, type: 3}
+  m_PrefabInstance: {fileID: 1871877726}
+  m_PrefabAsset: {fileID: 0}
