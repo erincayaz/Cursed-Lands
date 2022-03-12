@@ -22,7 +22,7 @@ public class tornadoSpawner : MonoBehaviour
 
     void spawnTornado()
     {
-        if (Time.time - lastSpawn >= tornado.cooldown)
+        if (Time.time - lastSpawn >= tornado.cooldown && tornado.amount != 0)
         {
             for(int i = 0; i < tornado.amount; i++)
             {

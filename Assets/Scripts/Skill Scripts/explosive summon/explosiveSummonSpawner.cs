@@ -19,7 +19,7 @@ public class explosiveSummonSpawner : MonoBehaviour
 
     void spawnSummon()
     {
-        if (Time.time - lastSummonTime >= explosiveSummonStat.cooldown)
+        if (Time.time - lastSummonTime >= explosiveSummonStat.cooldown && explosiveSummonStat.amount != 0)
         {
             if (summonList.Count > 0)
             {
