@@ -9,7 +9,6 @@ public class PlayerCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(arrow.activeInHierarchy == true)
-            arrow.GetComponent<arrowScript>().Attack();
+        arrow.GetComponent<arrowScript>().Attack();
     }
 }
