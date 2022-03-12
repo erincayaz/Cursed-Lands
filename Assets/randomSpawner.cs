@@ -5,20 +5,33 @@ using UnityEngine;
 public class randomSpawner : MonoBehaviour
 {
     [SerializeField] AnimationCurve spawnControl;
-    [SerializeField] List<GameObject> enemyTypes;
-    [SerializeField] GameObject enemyPrefab;
+    [SerializeField] List<MonsterSpecificSpawner> enemyScripts;
+    [SerializeField] List<GameObject> enemyPrefab;
+    [SerializeField] List<int> waves;
 
-    List<GameObject> enemies = new List<GameObject>();
+    int i;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        i = 0;
+        StartCoroutine("SpawnEnemies");
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator SpawnEnemies()
     {
-        
+        while(Time.time < 30 * 60)
+        {
+            enemyScripts[i].SpawnEnemy();
+
+            if(Time.time > waves[i])
+            {
+                i++;
+            }
+
+            yield return new WaitForSeconds(spawnControl.Evaluate(Time.time / 600));
+        }
+
+        yield return null;
     }
 }

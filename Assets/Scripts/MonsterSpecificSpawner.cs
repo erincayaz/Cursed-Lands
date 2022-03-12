@@ -25,35 +25,38 @@ public class MonsterSpecificSpawner : MonoBehaviour
 
     IEnumerator EnemySpawnSubscriber(int i)
     {
-        print("spawn");
-
         int count = countForWaves[i];
 
         int j = 0;
         while(j < count)
         {
-            GameObject temp = availableEnemyExist();
-            if(temp != null)
-            {
-                Vector3 randomPoint = EnemySpawner.generateRandomPoint(Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0)));
-                
-                temp.SetActive(true);
-                temp.GetComponent<enemyMovement>().ded = false;
-                temp.transform.position = randomPoint;
-            }
-            else
-            {
-                Vector3 randomPoint = EnemySpawner.generateRandomPoint(Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0)));
-
-                GameObject gameObject = Instantiate(spawnedObject, randomPoint, Quaternion.identity);
-                enemies.Add(gameObject);
-            }
+            SpawnEnemy();
 
             j++;
             yield return new WaitForSeconds(0.1f);
         }
 
         yield return null;
+    }
+
+    public void SpawnEnemy()
+    {
+        GameObject temp = availableEnemyExist();
+        if (temp != null)
+        {
+            Vector3 randomPoint = EnemySpawner.generateRandomPoint(Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0)));
+
+            temp.SetActive(true);
+            temp.GetComponent<enemyMovement>().ded = false;
+            temp.transform.position = randomPoint;
+        }
+        else
+        {
+            Vector3 randomPoint = EnemySpawner.generateRandomPoint(Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0)));
+
+            GameObject gameObject = Instantiate(spawnedObject, randomPoint, Quaternion.identity);
+            enemies.Add(gameObject);
+        }
     }
 
     GameObject availableEnemyExist()
