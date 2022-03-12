@@ -24,7 +24,7 @@ public class garlicScript : MonoBehaviour
 
     public void ActivateGarlic()
     {
-        GetComponent<BoxCollider2D>().enabled = true;
+        GetComponent<CircleCollider2D>().enabled = true;
         GetComponent<SpriteRenderer>().enabled = true;
     }
 
