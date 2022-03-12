@@ -21,7 +21,7 @@ public class poisonSpawner : MonoBehaviour
 
     void spawnPoison()
     {
-        if(Time.time - lastSpawn >= spawnTime)
+        if(Time.time - lastSpawn >= spawnTime && poison.amount != 0)
         {
             Instantiate(poisonObject, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
             lastSpawn = Time.time;
