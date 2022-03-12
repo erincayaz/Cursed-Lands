@@ -33,7 +33,7 @@ public class skillUpgrades : MonoBehaviour
             do
             {
                 randomInt = Random.Range(0, availableSkills.Count);
-            } while (randomNumbers.IndexOf(randomInt) != -1);
+            } while (randomNumbers.Contains(randomInt));
 
             randomNumbers.Add(randomInt);
             availableSkills[randomInt].GetComponent<RectTransform>().anchoredPosition = new Vector2(0f, (1 - i) * 275f);
