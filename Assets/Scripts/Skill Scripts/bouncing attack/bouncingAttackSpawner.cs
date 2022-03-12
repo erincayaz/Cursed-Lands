@@ -23,7 +23,7 @@ public class bouncingAttackSpawner : MonoBehaviour
 
     void spawnBouncing()
     {
-        if(Time.time - lastSpawn >= bouncing.cooldown)
+        if(Time.time - lastSpawn >= bouncing.cooldown && bouncing.amount != 0)
         {
             for(int i = 0; i < bouncing.amount; i++)
             {

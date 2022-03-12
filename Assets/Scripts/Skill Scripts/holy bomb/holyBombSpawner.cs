@@ -24,9 +24,12 @@ public class holyBombSpawner : MonoBehaviour
 
     private void Update()
     {
-        if(Time.time - spawnTime >= holyBomb.cooldown)
+        if(Time.time - spawnTime >= holyBomb.cooldown && holyBomb.amount != 0)
         {
-            spawnBomb();
+            for(int i = 0; i < holyBomb.amount; i++)
+            {
+                spawnBomb();
+            }
         }
     }
 
@@ -36,13 +39,9 @@ public class holyBombSpawner : MonoBehaviour
             Camera.main.transform.position.x + Random.Range(-screenX, screenX),
             Camera.main.transform.position.y + Random.Range(-screenY, screenY),
             0f);
-
-        print("1 " + Camera.main.transform.position.y);
-        print("2 " + screenY * 5 / 3);
         
         float spawnY = Camera.main.transform.position.y + (screenY * 5/3);
 
-        print("3 " + spawnY);
         float spawnX = targetPos.x + (spawnY - targetPos.y) / y_xRatio;
 
         Vector3 spawnPos = new Vector3(spawnX, spawnY, 0f);
