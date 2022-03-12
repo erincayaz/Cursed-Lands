@@ -29,7 +29,7 @@ public class tornadoSpawner : MonoBehaviour
                 float randX = Random.Range(-5f, 5f);
                 float randY = Random.Range(-4f, 4f);
 
-                Vector2 spawnPos = new Vector2(randX, randY);
+                Vector2 spawnPos = new Vector2(transform.position.x + randX, transform.position.y + randY);
                 if(tornadoPool.Count > 0)
                 {
                     toSpawn = tornadoPool[tornadoPool.Count - 1];
