@@ -34,12 +34,12 @@ public class EnemySpawner : MonoBehaviour
 
         List<Vector3> options = new List<Vector3>();
 
-        float randX1 = Random.Range(cameraPos.x - 25f, cameraPos.x - 1f);
-        float randX2 = Random.Range(cameraPos.x + width + 1f, cameraPos.x + width + 25f);
+        float randX1 = Random.Range(cameraPos.x - 10f, cameraPos.x - 1f);
+        float randX2 = Random.Range(cameraPos.x + width + 1f, cameraPos.x + width + 10f);
         float randX = Random.Range(0, 2) == 0 ? randX1 : randX2;
 
-        float randY1 = Random.Range(cameraPos.y - 15f, cameraPos.y - 1f);
-        float randY2 = Random.Range(cameraPos.y + height + 1f, cameraPos.y + height + 15f);
+        float randY1 = Random.Range(cameraPos.y - 6f, cameraPos.y - 1f);
+        float randY2 = Random.Range(cameraPos.y + height + 1f, cameraPos.y + height + 6f);
         float randY = Random.Range(0, 2) == 0 ? randY1 : randY2;
         options.Add(new Vector3(randX, randY, 0));
 
