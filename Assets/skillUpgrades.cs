@@ -11,19 +11,43 @@ public class skillUpgrades : MonoBehaviour
 
     public List<GameObject> availableSkills;
 
-    private void Start()
+    private void OnEnable()
     {
         availableSkills.Clear();
-        foreach(var skill in skillScriptableObjects)
+        foreach (var skill in skillScriptableObjects)
         {
-            if(skill.amount == 0)
+            if (skill.amount == 0)
             {
                 addObject(skillUnlockList, skill.name);
             }
-            else if(skill.amount > 0)
+            else if (skill.amount > 0)
             {
                 addObject(skillUpgradeList, skill.name);
             }
+        }
+
+        List<int> randomNumbers = new List<int>();
+        for(int i = 0; i < 3; i++)
+        {
+            int randomInt;
+            do
+            {
+                randomInt = Random.Range(0, availableSkills.Count);
+            } while (randomNumbers.IndexOf(randomInt) != -1);
+
+            randomNumbers.Add(randomInt);
+            availableSkills[randomInt].GetComponent<RectTransform>().anchoredPosition = new Vector2(0f, (1 - i) * 275f);
+        }
+    }
+
+    private void OnDisable()
+    {
+        foreach(var skill in availableSkills)
+        {
+            if (skill.GetComponent<RectTransform>().anchoredPosition != new Vector2(1000f, 1000f))
+            {
+                skill.GetComponent<RectTransform>().anchoredPosition = new Vector2(1000f, 1000f);
+            }   
         }
     }
 
@@ -38,10 +62,6 @@ public class skillUpgrades : MonoBehaviour
         }
     }
 
-    public void theFunction()
-    {
-        print("aaaa");
-    }
     public void increaseRadius(string s)
     {
         foreach (var skill in skillScriptableObjects)
