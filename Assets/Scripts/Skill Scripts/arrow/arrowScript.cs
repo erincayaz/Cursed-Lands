@@ -20,50 +20,59 @@ public class arrowScript : MonoBehaviour
         player = transform.parent.parent.transform;
     }
 
-    public void Attack()
+    private void Update()
     {
-
         if (Time.time - projectileLastAttack > arrowStats.cooldown)
         {
-            RaycastHit2D[] hits = Physics2D.BoxCastAll(player.transform.position, new Vector2(15f, 10f), 0f, Vector2.zero, Mathf.Infinity, LayerMask.GetMask("Enemy"));
-            
-            if (hits.Length != 0)
+            int i = 0;
+            for (i = 0; i < arrowStats.amount; i++)
             {
-                Vector3 minPos = hits[0].transform.position;
-                float minDistance = Vector3.Distance(player.transform.position, minPos);
-                foreach (RaycastHit2D hit in hits)
+                Invoke("Attack", i * 0.2f);
+            }
+
+            projectileLastAttack = Time.time + (i * 0.2f);
+        }
+    }
+
+    public void Attack()
+    {
+        RaycastHit2D[] hits = Physics2D.BoxCastAll(player.transform.position, new Vector2(25f, 15f), 0f, Vector2.zero, Mathf.Infinity, LayerMask.GetMask("Enemy"));
+
+        if (hits.Length != 0)
+        {
+            Vector3 minPos = hits[0].transform.position;
+            float minDistance = Vector3.Distance(player.transform.position, minPos);
+            foreach (RaycastHit2D hit in hits)
+            {
+                float distance = Vector3.Distance(player.transform.position, hit.transform.position);
+                if (distance < minDistance)
                 {
-                    float distance = Vector3.Distance(player.transform.position, hit.transform.position);
-                    if (distance < minDistance)
-                    {
-                        minPos = hit.transform.position;
-                        minDistance = distance;
-                    }
+                    minPos = hit.transform.position;
+                    minDistance = distance;
                 }
+            }
 
-                Vector2 dir = minPos - player.transform.position;
-                dir = dir.normalized;
-                float rot_z = Mathf.Atan2(-dir.x, dir.y) * Mathf.Rad2Deg;
+            Vector2 dir = minPos - player.transform.position;
+            dir = dir.normalized;
+            float rot_z = Mathf.Atan2(-dir.x, dir.y) * Mathf.Rad2Deg;
 
-                if (!availableArrowExist())
+            if (!availableArrowExist())
+            {
+                GameObject tempProjectile = Instantiate(projectile, player.transform.position, Quaternion.Euler(0f, 0f, rot_z));
+                tempProjectile.GetComponent<Rigidbody2D>().velocity = dir * arrowStats.speed;
+
+                arrows.Add(tempProjectile);
+            }
+            else
+            {
+                foreach (GameObject arrow in arrows)
                 {
-                    GameObject tempProjectile = Instantiate(projectile, player.transform.position, Quaternion.Euler(0f, 0f, rot_z));
-                    tempProjectile.GetComponent<Rigidbody2D>().velocity = dir * arrowStats.speed;
-
-                    arrows.Add(tempProjectile);
-                }
-                else
-                {
-                    foreach(GameObject arrow in arrows)
+                    if (poolArrow(arrow, rot_z, dir))
                     {
-                        if(poolArrow(arrow, rot_z, dir))
-                        {
-                            break;
-                        }
+                        break;
                     }
                 }
             }
-            projectileLastAttack = Time.time;
         }
     }
 
