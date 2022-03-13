@@ -8,7 +8,6 @@ public class enemyMovement : MonoBehaviour
     //public static event PlayerHitAction OnHit;
 
     public enemyScriptableObject scriptableObject;
-    [SerializeField] GameObject xp;
 
     // object variables
     public float health;

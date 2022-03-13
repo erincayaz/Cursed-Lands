@@ -30,7 +30,7 @@ public class MonsterSpecificSpawner : MonoBehaviour
         int j = 0;
         while(j < count)
         {
-            SpawnEnemy();
+            SpawnEnemy(0, 0);
 
             j++;
             yield return new WaitForSeconds(0.1f);
@@ -39,12 +39,12 @@ public class MonsterSpecificSpawner : MonoBehaviour
         yield return null;
     }
 
-    public void SpawnEnemy()
+    public void SpawnEnemy(float h, float v)
     {
         GameObject temp = availableEnemyExist();
         if (temp != null)
         {
-            Vector3 randomPoint = EnemySpawner.generateRandomPoint(Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0)));
+            Vector3 randomPoint = EnemySpawner.generateRandomPoint(h, v, Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0)));
 
             temp.SetActive(true);
             temp.GetComponent<enemyMovement>().ded = false;
@@ -52,7 +52,7 @@ public class MonsterSpecificSpawner : MonoBehaviour
         }
         else
         {
-            Vector3 randomPoint = EnemySpawner.generateRandomPoint(Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0)));
+            Vector3 randomPoint = EnemySpawner.generateRandomPoint(h, v, Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0)));
 
             GameObject gameObject = Instantiate(spawnedObject, randomPoint, Quaternion.identity);
             enemies.Add(gameObject);

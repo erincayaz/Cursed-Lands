@@ -22,14 +22,16 @@ public class randomSpawner : MonoBehaviour
     {
         while(Time.time < 30 * 60)
         {
-            enemyScripts[i].SpawnEnemy();
+            float h = Input.GetAxisRaw("Horizontal"), v = Input.GetAxisRaw("Vertical");
+
+            enemyScripts[i].SpawnEnemy(h, v);
 
             if(Time.time > waves[i])
             {
                 i++;
             }
 
-            yield return new WaitForSeconds(spawnControl.Evaluate(Time.time / 600));
+            yield return new WaitForSeconds(spawnControl.Evaluate(Time.time / 1800));
         }
 
         yield return null;

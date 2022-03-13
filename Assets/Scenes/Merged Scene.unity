@@ -3280,6 +3280,24 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.030042918
     - serializedVersion: 3
+      time: 0.65806776
+      value: 0.09636147
+      inSlope: -0.09225589
+      outSlope: -0.09225589
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.86622334
+      value: 0.04859556
+      inSlope: -0.19501169
+      outSlope: -0.19501169
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.9337604
+      outWeight: 0.33333334
+    - serializedVersion: 3
       time: 1
       value: 0
       inSlope: -0.4940009
@@ -3297,7 +3315,7 @@ MonoBehaviour:
   enemyPrefab:
   - {fileID: 110849219068487662, guid: f48870be777c12840b96d3f4a7f95934, type: 3}
   - {fileID: 3228636484256044107, guid: dc8bc62df398817498a80e8a2fb5a6e2, type: 3}
-  waves: 1e0000003c000000
+  waves: 1e00000008070000
 --- !u!1 &1923042776
 GameObject:
   m_ObjectHideFlags: 0
