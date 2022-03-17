@@ -26,5 +26,6 @@ MonoBehaviour:
   baseSpeed: 0
   baseDuration: 0
   baseLevel: 0
+  maxLevel: 0
   sprite: {fileID: 0}
   anim: {fileID: 0}

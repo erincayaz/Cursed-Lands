@@ -29,6 +29,7 @@ public class skillUpgrades : MonoBehaviour
             {
                 addObject(skillUnlockList, skill.name);
             }
+            //else if (skill.amount > 0 && skill.level < skill.maxLevel)
             else if (skill.amount > 0)
             {
                 addObject(skillUpgradeList, skill.name);
