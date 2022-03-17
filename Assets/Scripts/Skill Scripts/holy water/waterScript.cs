@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class waterScript : MonoBehaviour
 {
-    private void Start()
-    {
-    }
+    public skillScriptableObject holyWater;
     private void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.tag == "Enemy")
         {
-            print("touching enemy in water");
+            collision.GetComponent<enemyMovement>().enemyHit(holyWater.damage / holyWater.duration * Time.deltaTime, 0f);
         }
     }
 }

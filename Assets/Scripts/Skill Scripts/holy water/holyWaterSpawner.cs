@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class holyBombSpawner : MonoBehaviour
+public class holyWaterSpawner : MonoBehaviour
 {
     public skillScriptableObject holyBomb;
 
@@ -49,13 +49,13 @@ public class holyBombSpawner : MonoBehaviour
         if (bombList.Count > 1)
         {
             GameObject toSpawn = bombList[bombList.Count - 1];
-            toSpawn.GetComponent<holyBomb>().unpool(spawnPos, targetPos);
+            toSpawn.GetComponent<holyWater>().unpool(spawnPos, targetPos);
             bombList.Remove(toSpawn);
         }
         else
         {
             GameObject toSpawn = Instantiate(holyBombObj, spawnPos, Quaternion.identity);
-            toSpawn.GetComponent<holyBomb>().targetPos = targetPos;
+            toSpawn.GetComponent<holyWater>().targetPos = targetPos;
         }
         spawnTime = Time.time;
     }

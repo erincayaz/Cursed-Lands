@@ -60,9 +60,10 @@ public class tornado : MonoBehaviour
     {
         float damage = (tornadoScr.damage / tornadoScr.duration) * Time.deltaTime;
         Vector2 dir = (transform.position - enemy.transform.position).normalized;
+        float distance = Vector2.Distance(transform.position, enemy.transform.position);
 
         enemy.GetComponent<enemyMovement>().enemyHit(damage, 0f);
 
-        enemy.GetComponent<Rigidbody2D>().AddForce(dir * pullForce);
+        enemy.GetComponent<Rigidbody2D>().AddForce(dir * pullForce / distance);
     }
 }

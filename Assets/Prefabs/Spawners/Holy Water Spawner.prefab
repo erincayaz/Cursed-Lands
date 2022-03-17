@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 307714525084257312}
   - component: {fileID: 307714525084257319}
   m_Layer: 0
-  m_Name: Holy Bomb Spawner
+  m_Name: Holy Water Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

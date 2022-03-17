@@ -4,19 +4,28 @@ using UnityEngine;
 
 public class skillUpgrades : MonoBehaviour
 {
+    gameController gameControllerScr;
+
     public List<skillScriptableObject> skillScriptableObjects;
+
+    [SerializeField] GameObject UIGrid;
+    [SerializeField] List<GameObject> UIGridList;
+    [SerializeField] Transform UISpawnPos;
+
 
     public List<GameObject> skillUnlockList;
     public List<GameObject> skillUpgradeList;
 
     public List<GameObject> availableSkills;
-
     private void OnEnable()
     {
+        if(gameControllerScr == null)
+            gameControllerScr = FindObjectOfType<gameController>();
+
         availableSkills.Clear();
         foreach (var skill in skillScriptableObjects)
         {
-            if (skill.amount == 0)
+            if (skill.amount == 0 && gameControllerScr.weaponCount < gameControllerScr.maxWeaponCount)
             {
                 addObject(skillUnlockList, skill.name);
             }
@@ -49,6 +58,17 @@ public class skillUpgrades : MonoBehaviour
                 skill.GetComponent<RectTransform>().anchoredPosition = new Vector2(1000f, 1000f);
             }   
         }
+    }
+
+
+    skillScriptableObject getScriptableObject(string name)
+    {
+        foreach (var skill in skillScriptableObjects)
+        {
+            if (skill.name == name)
+                return skill;
+        }
+        return null;
     }
 
     void addObject(List<GameObject> myList, string str)

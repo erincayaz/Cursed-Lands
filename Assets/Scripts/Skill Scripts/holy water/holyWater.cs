@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class holyBomb : MonoBehaviour
+public class holyWater : MonoBehaviour
 {
     public skillScriptableObject holyBombScr;
 
@@ -64,7 +64,7 @@ public class holyBomb : MonoBehaviour
         transform.position = new Vector3(997.5f, 997.5f, 0f);
         bomb.SetActive(true);
         water.SetActive(false);
-        FindObjectOfType<holyBombSpawner>().bombList.Add(gameObject);
+        FindObjectOfType<holyWaterSpawner>().bombList.Add(gameObject);
     }
     public void unpool(Vector3 startPos1, Vector3 targetPos1)
     {
