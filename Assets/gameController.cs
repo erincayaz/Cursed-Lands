@@ -19,6 +19,11 @@ public class gameController : MonoBehaviour
         //    UIGridList.Add(toSpawn);
         //}
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) togglePauseScreen();
+    }
     private void OnEnable()
     {
         EventManager.OnLevelUp += LevelUpOpen;
@@ -29,6 +34,8 @@ public class gameController : MonoBehaviour
         EventManager.OnLevelUp -= LevelUpOpen;
     }
 
+
+    #region Level Up Functions
     public void LevelUpClose()
     {
         levelUpCanvas.SetActive(false);
@@ -48,4 +55,15 @@ public class gameController : MonoBehaviour
         Debug.Log("weapon count: " + weaponCount);
         //skillScriptableObject currentSkill = getScriptableObject(name);
     }
+    #endregion
+
+    #region Pause Screen Functions
+    [SerializeField] GameObject pauseCanvas;
+    public void togglePauseScreen()
+    {
+        pauseCanvas.SetActive(!pauseCanvas.activeInHierarchy);
+        Time.timeScale = pauseCanvas.activeInHierarchy ? 0f : 1f;
+    }
+
+    #endregion
 }
