@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 0.4
   damage: 20
-  amount: 0
-  cooldown: 0
+  amount: 1
+  cooldown: 0.5
   speed: 0
-  duration: 0
-  level: 0
+  duration: 2.5
+  level: 1
   baseRadius: 0.4
   baseDamage: 20
   baseAmount: 0
-  baseCooldown: 0
+  baseCooldown: 0.5
   baseSpeed: 0
-  baseDuration: 0
+  baseDuration: 2.5
   baseLevel: 0
   maxLevel: 0
   sprite: {fileID: 0}
