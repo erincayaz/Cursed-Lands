@@ -21,7 +21,7 @@ public class EnemySpawner : MonoBehaviour
         {
             if (Time.time > waveTimes[i])
             {
-                EventManager.BrodcastOnSpawn(i);
+                EventManager.BrodcastOnSpawn((int)Time.time);
                 i++;
             }
         }

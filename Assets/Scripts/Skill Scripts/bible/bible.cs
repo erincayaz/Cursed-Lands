@@ -37,4 +37,9 @@ public class bible : MonoBehaviour
         }
     }
 
+    public void increaseRadius()
+    {
+        transform.position = new Vector3(transform.position.x + (transform.position.x / 20f), 0, 0);
+    }
+
 }

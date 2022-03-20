@@ -53,6 +53,10 @@ public class enemyMovement : MonoBehaviour
                 rb.AddForce(dir * Time.deltaTime * 75f);
             }
         }
+        else if(Vector2.Distance(transform.position, player.transform.position) > 20f)
+        {
+            death();
+        }
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -70,18 +74,25 @@ public class enemyMovement : MonoBehaviour
 
         if(health <= 0f)
         {
-            ded = true;
-
-            if( (scriptableObject.enemyTier * 0.75f) * Random.Range(0, 100) >= 60)
-                EventManager.BroadcastOnDeath(transform.position);
-
-            transform.position = new Vector3(500f, 500f);
-            rb.velocity = Vector2.zero;
-            gameObject.SetActive(false);
+            death();
         }
 
         hit = true;
         Invoke("changeHit", hitCooldown);
+    }
+
+    private void death()
+    {
+        ded = true;
+
+        if ((scriptableObject.enemyTier * 0.75f) * Random.Range(0, 100) >= 60)
+            EventManager.BroadcastOnDeath(transform.position);
+
+        transform.position = new Vector3(500f, 500f);
+        rb.velocity = Vector2.zero;
+        gameObject.SetActive(false);
+
+        health = scriptableObject.health;
     }
 
     void changeHit()

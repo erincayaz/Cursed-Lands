@@ -13,6 +13,8 @@ public class bibleScript : MonoBehaviour
     [SerializeField] int maxBible;
     public skillScriptableObject bibleStats;
 
+    float bibleArea;
+
     Transform player;
     List<GameObject> bibles = new List<GameObject>();
     List<GameObject> activeBibles = new List<GameObject>();
@@ -24,6 +26,7 @@ public class bibleScript : MonoBehaviour
     {
         player = transform.parent.parent.transform;
         startTime = Time.time;
+        bibleArea = bibleStats.radius;
 
         for (int i = 0; i < maxBible; i++)
         {
@@ -78,5 +81,23 @@ public class bibleScript : MonoBehaviour
             bible.transform.Rotate(new Vector3(0f, 0f, 1f) * bibleStats.speed * Time.deltaTime);
         }
         ////////////////////
+        
+        // Bible Area Change Check
+        if(bibleArea < bibleStats.radius)
+        {
+            foreach (GameObject bible in bibles)
+            {
+                bible.transform.rotation = Quaternion.Euler(0, 0, 0);
+
+                Transform childOfBible = bible.transform.GetChild(0);
+                childOfBible.GetComponent<bible>().increaseRadius();
+
+                bibleArea = bibleStats.radius;
+            }
+
+            activeBibles.Clear();
+        }
+
+        //////////////////////////
     }
 }
