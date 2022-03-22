@@ -5,11 +5,14 @@ using UnityEngine;
 public class garlicScript : MonoBehaviour
 {
     public skillScriptableObject garlicStats;
-    float lastAttack;
     [SerializeField] float rotationSpeed;
+
+    float garlicRadius;
 
     private void Start()
     {
+        garlicRadius = garlicStats.radius;
+
         if(garlicStats.amount == 0)
         {
             GetComponent<CircleCollider2D>().enabled = false;
@@ -20,6 +23,12 @@ public class garlicScript : MonoBehaviour
     private void Update()
     {
         transform.eulerAngles = new Vector3(0f, 0f, (transform.eulerAngles.z % 360) + Time.deltaTime * rotationSpeed);
+
+        if(garlicStats.radius > garlicRadius)
+        {
+            transform.localScale += transform.localScale / 10f;
+            garlicRadius = garlicStats.radius;
+        }
     }
 
     public void ActivateGarlic()

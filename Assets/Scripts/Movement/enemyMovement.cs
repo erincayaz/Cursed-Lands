@@ -52,10 +52,11 @@ public class enemyMovement : MonoBehaviour
             {
                 rb.AddForce(dir * Time.deltaTime * 75f);
             }
-        }
-        else if(Vector2.Distance(transform.position, player.transform.position) > 20f)
-        {
-            death();
+
+            if (Vector2.Distance(transform.position, player.transform.position) > 40f)
+            {
+                death();
+            }
         }
     }
 

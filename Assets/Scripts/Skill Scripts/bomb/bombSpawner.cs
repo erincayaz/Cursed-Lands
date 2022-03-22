@@ -48,18 +48,32 @@ public class bombSpawner : MonoBehaviour
 
     void Attack()
     {
+        /*
         if (bombStats.amount > activeBombs.Count)
         {
             activeBombs.Add(bombs[activeBombs.Count]);
         }
+        */
 
         float tempTime = 0f;
+        for(int i = 0; i < bombStats.amount; i++)
+        {
+            if(bombs[i].transform.position.x == 1010f)
+            {
+                StartCoroutine(WaitAndChange(tempTime, bombs[i]));
+
+                tempTime += 0.1f;
+            }
+        }
+
+        /*
         foreach (GameObject bomb in activeBombs)
         {
             StartCoroutine(WaitAndChange(tempTime, bomb));
 
             tempTime += 0.1f;
         }
+        */
     }
 
     private IEnumerator WaitAndChange(float waitTime, GameObject gameObject)

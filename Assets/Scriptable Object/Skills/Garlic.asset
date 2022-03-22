@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 1
   damage: 3
-  amount: 0
-  cooldown: 0.5
+  amount: 1
+  cooldown: 1
   speed: 0
   duration: 3
   level: 1
   baseRadius: 1
   baseDamage: 3
-  baseAmount: 0
-  baseCooldown: 0.5
+  baseAmount: 1
+  baseCooldown: 1
   baseSpeed: 0
   baseDuration: 3
   baseLevel: 1

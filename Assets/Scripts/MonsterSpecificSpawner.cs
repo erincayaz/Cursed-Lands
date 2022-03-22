@@ -13,7 +13,8 @@ public class MonsterSpecificSpawner : MonoBehaviour
     {
         SpawnRandomly,
         SpawnAsLine,
-        SpawnAtOnePoint
+        SpawnAtOnePoint,
+        SpawnAsCircle
     }
 
     [System.Serializable]
@@ -48,7 +49,8 @@ public class MonsterSpecificSpawner : MonoBehaviour
                     StartCoroutine(specialEventSpawner(spawner[i].count, spawner[i].cooldownBetweenSpawns));
                 else if (spawner[i].spawn == SpawnTypes.SpawnAtOnePoint)
                     StartCoroutine(SpawnMultipleEnemyAtOnePoint(-1, -1, spawner[i].count));
-
+                else if (spawner[i].spawn == SpawnTypes.SpawnAsCircle)
+                    StartCoroutine(SpawnEnemiesAsCircle(spawner[i].count, spawner[i].cooldownBetweenSpawns));
             }
 
         }
@@ -126,6 +128,41 @@ public class MonsterSpecificSpawner : MonoBehaviour
 
                 yield return new WaitForSeconds(cooldown);
             }
+        }
+
+        yield return null;
+    }
+
+    public IEnumerator SpawnEnemiesAsCircle(int countForWaves, float cooldown)
+    {
+        Vector3 cameraPos = Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0));
+        float height = Camera.main.orthographicSize * 2.0f;
+        float width = height * Camera.main.aspect;
+
+        for (int i = 0; i < countForWaves; i++)
+        {
+            for (float t = 0f; t < 1f; t += 0.01f)
+            {
+                var center = new Vector2(cameraPos.x + width / 2f, cameraPos.y + height / 2f);
+                var radius = width / 2f + 3f; // radius of the circle
+                var angle = t * 2f * Mathf.PI; // in radians
+                var pointOnCircle = center + radius * new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
+
+                GameObject temp = availableEnemyExist();
+                if (temp != null)
+                {
+                    temp.SetActive(true);
+                    temp.GetComponent<enemyMovement>().ded = false;
+                    temp.transform.position = pointOnCircle;
+                }
+                else
+                {
+                    GameObject gameObject = Instantiate(spawnedObject, pointOnCircle, Quaternion.identity);
+                    enemies.Add(gameObject);
+                }
+            }
+
+            yield return new WaitForSeconds(cooldown);
         }
 
         yield return null;
