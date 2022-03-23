@@ -22,6 +22,7 @@ public class skillScriptableObject : ScriptableObject
     [SerializeField] float baseSpeed;
     [SerializeField] float baseDuration;
     [SerializeField] int baseLevel;
+    public int maxLevel;
 
     private void OnEnable()
     {

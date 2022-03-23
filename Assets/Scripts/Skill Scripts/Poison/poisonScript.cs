@@ -7,8 +7,6 @@ public class poisonScript : MonoBehaviour
     public skillScriptableObject poison;
     public LayerMask enemyMask;
 
-    public float hitDuration;
-
     void Start()
     {
         StartCoroutine(despawnPoison());
@@ -19,24 +17,20 @@ public class poisonScript : MonoBehaviour
         Attack();
     }
 
-    //private void OnDrawGizmos()
-    //{
-    //    Gizmos.DrawSphere(transform.position, poison.radius);
-    //}
-
     void Attack()
     {
         RaycastHit2D[] enemies = Physics2D.CircleCastAll(transform.position, poison.radius, Vector2.zero, Mathf.Infinity, enemyMask);
         //damage enemy here
         foreach(var enemy in enemies)
         {
-            enemy.transform.GetComponent<enemyMovement>().enemyHit(poison.damage / hitDuration * Time.deltaTime, 0f);
+            enemy.transform.GetComponent<enemyMovement>().enemyHit(poison.damage / poison.duration * Time.deltaTime, 0f);
         }
     }
     IEnumerator despawnPoison()
     {
-        yield return new WaitForSeconds(hitDuration);
+        yield return new WaitForSeconds(poison.duration);
         // change to pool position
-        transform.position = new Vector2(10f, 10f);
+        //transform.position = new Vector2(10f, 10f);
+        Destroy(this.gameObject);
     }
 }
