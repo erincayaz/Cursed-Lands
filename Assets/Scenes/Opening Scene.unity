@@ -617,6 +617,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scene Controller
       objectReference: {fileID: 0}
+    - target: {fileID: 1640207394264811112, guid: c744dd30d7eecce4fb51bdbd905708a1, type: 3}
+      propertyPath: levelScene
+      value: Merged Scene
+      objectReference: {fileID: 0}
     - target: {fileID: 6993058664844035461, guid: c744dd30d7eecce4fb51bdbd905708a1, type: 3}
       propertyPath: m_RootOrder
       value: 1
