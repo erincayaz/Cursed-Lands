@@ -24,7 +24,7 @@ public class arrowScript : MonoBehaviour
     {
         if (Time.time - projectileLastAttack > arrowStats.cooldown)
         {
-            int i = 0;
+            int i;
             for (i = 0; i < arrowStats.amount; i++)
             {
                 Invoke("Attack", i * 0.2f);

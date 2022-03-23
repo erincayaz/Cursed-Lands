@@ -8,6 +8,8 @@ public class bombSpawner : MonoBehaviour
     [SerializeField] GameObject bombPrefab;
     [SerializeField] int maximumBomb;
 
+    float bombCooldown;
+
     List<GameObject> bombs = new List<GameObject>();
     List<GameObject> activeBombs = new List<GameObject>();
 
@@ -16,6 +18,8 @@ public class bombSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        bombCooldown = bombStats.cooldown;
+
         for (int i = 0; i < maximumBomb; i++)
         {
             GameObject tempProjectile = Instantiate(bombPrefab, new Vector3(1010f, 1010f), Quaternion.identity);
@@ -28,23 +32,48 @@ public class bombSpawner : MonoBehaviour
         }
 
         player = transform.parent.parent.transform;
-        InvokeRepeating("Attack", 0.5f, bombStats.cooldown);
+        InvokeRepeating("Attack", 0.5f, bombCooldown);
+    }
+
+    private void Update()
+    {
+        if(bombStats.cooldown < bombCooldown)
+        {
+            CancelInvoke("Attack");
+            InvokeRepeating("Attack", 0f, bombCooldown);
+
+            bombCooldown = bombStats.cooldown;
+        }
     }
 
     void Attack()
     {
+        /*
         if (bombStats.amount > activeBombs.Count)
         {
             activeBombs.Add(bombs[activeBombs.Count]);
         }
+        */
 
         float tempTime = 0f;
+        for(int i = 0; i < bombStats.amount; i++)
+        {
+            if(bombs[i].transform.position.x == 1010f)
+            {
+                StartCoroutine(WaitAndChange(tempTime, bombs[i]));
+
+                tempTime += 0.1f;
+            }
+        }
+
+        /*
         foreach (GameObject bomb in activeBombs)
         {
             StartCoroutine(WaitAndChange(tempTime, bomb));
 
             tempTime += 0.1f;
         }
+        */
     }
 
     private IEnumerator WaitAndChange(float waitTime, GameObject gameObject)

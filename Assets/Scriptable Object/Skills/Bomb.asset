@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: Bomb
   m_EditorClassIdentifier: 
   radius: 0
-  damage: 5
+  damage: 10
   amount: 0
-  cooldown: 3
+  cooldown: 8
   speed: 0
   duration: 0
   level: 0
   baseRadius: 0
-  baseDamage: 5
+  baseDamage: 10
   baseAmount: 0
-  baseCooldown: 3
+  baseCooldown: 8
   baseSpeed: 0
   baseDuration: 0
   baseLevel: 0
